@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+
+
+	<div id="jsi-flying-fish-container" class="container"></div>
+
+
+	<script src='fish.js'></script>
+<div id="header" class="wrap">
+	<div class="logo">Book Management</div>
+
+	<div class="login"><a href="login.html">Login</a></div>
+
+	<div id="navbar">
+		<form method="get" name="search" action="">
+			Search：<input class="input-text" type="text" name="keywords" /><input class="input-btn" type="submit" name="submit" value="" />
+		</form>
+	</div>
+</div>
+<div id="register">
+	<div class="title">
+		<h2>Welcome to register for our library</h2>
+	</div>
+	<div class="steps">
+		<ul class="clearfix">
+			<li class="current">1. Fill in the registration information</li>
+			<li class="unpass">2. Successful registration</li>
+		</ul>
+	</div>
+	<form method="post" action="register_success.html">
+		<dl>
+			<dt>User Name：</dt>
+			<dd><input class="input-text" type="text" name="userName" onfocus="showTip('span_userName', 'Please enter a username!')" /><span id="span_userName"></span></dd>
+			<dt>Password：</dt>
+			<dd><input class="input-text" type="password" name="passWord" onfocus="showTi('span_passWord', 'Passwords must not be too simple!')" /><span id="span_passWord"></span></dd>
+			<dt>Confirm Password：</dt>
+			<dd><input class="input-text" type="password" name="rePassWord"onfocus="showT('span_repassword', 'The password should be entered the same way both times!')"  /><span id="span_repassword"></span></dd>
+			<dt>Email：</dt>
+			<dd><input class="input-text" type="text" name="email" onfocus="show('span_email', 'Enter your email correctly!')" /><span id="span_email"></span></dd>
+			<dt></dt>
+			<dd class="button"><input class="input-reg" type="submit" name="register" value="" /></dd>
+		</dl>
+	</form>
+</div>
+<div id="footer" class="wrap">
+	Team 31 Book Management System &copy; All rights reserved</div>
+</body>
+<script>
+	function showTip(spanID, msg) {
+			//The first step is to get the span element for the operation
+			var span = document.getElementById(spanID);
+			span.innerHTML = msg;
+		}
+
+		function showTi(spanID, msg) {
+			//The first step is to get the span element for the operation
+			var span = document.getElementById(spanID);
+			span.innerHTML = msg;
+		}
+		function showT(spanID, msg) {
+			//The first step is to get the span element for the operation
+			var span = document.getElementById(spanID);
+			span.innerHTML = msg;
+		}
+		function show(spanID, msg) {
+			//The first step is to get the span element for the operation
+			var span = document.getElementById(spanID);
+			span.innerHTML = msg;
+		}
+</script>
+</html>

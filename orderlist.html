@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Borrowing Orders</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+
+	<div id="jsi-flying-fish-container" class="container"></div>
+
+	<script src='fish.js'></script>
+<div id="header" class="wrap">
+	<div class="logo">Book Management</div>
+
+	<div class="login"><a href="login.html">Login</a></div>
+
+	<div id="navbar">
+		<div class="userMenu">
+			<ul>
+				<li ><a href="index.html">UserHome</a></li>
+				<li><a href="orderlist.html">MyOrder</a></li>
+				<li><a href="shopping.html">Bookcase</a></li>
+				<li class="current"><a href="ok.html">Books available</a></li>
+				<li ><a href="no.html">Books not available</a></li>
+				<li ><a href="add-.html">Back Office Management</a></li>
+			</ul>
+		</div>
+		<form method="get" name="search" action="">
+			Search：<input class="input-text" type="text" name="keywords" /><input class="input-btn" type="submit" name="submit" value="" />
+		</form>
+	</div>
+</div>
+<div id="content" class="wrap">
+	<div class="list orderList">
+			<table>
+				<tr class="title">
+					<th class="orderId">Order Number</th>
+					<th class="createTime">Order items</th>
+					<th class="userName">Borrowers</th>
+					<th class="price">Order amount</th>
+					<th class="createTime">Borrowing time</th>
+					<th class="status">Order Status</th>
+					<th class="createTime">Return time</th>
+					<th class="createTime">Return Status</th>
+
+				</tr>
+				<tr>
+					<td>10010</td>
+					<td class="thumb"><img src="images/book/book_01.gif" /></td>
+					<td>Tom</td>
+					<td>￥3.00</td>
+					<td>2022-12-21 12:00:00</td>
+					<td>Completed</td>
+					<td>2023-3-21 12:00:00</td>
+					<td>Incomplete</td>
+				</tr>
+				<tr>
+					<td>10011</td>
+					<td class="thumb"><img src="images/book/book_02.gif" /></td>
+					<td>Jack</td>
+					<td>￥18.00</td>
+					<td>2023-2-2 12:00:00</td>
+					<td>Completed</td>
+					<td>2023-4-2 12:00:00</td>
+					<td>Incomplete</td>
+				</tr>
+			</table>
+			<div class="page-spliter">
+				<a href="#">&lt;</a>
+				<a href="#">Home page</a>
+				<span class="current">1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<span>...</span>
+				<a href="#">Last Page</a>
+				<a href="#">&gt;</a>
+			</div>
+			<div class="button"><input class="input-gray" type="submit" name="submit" value="View orders from one month ago" /><input class="input-gray" type="submit" name="submit" value="View orders from one month ago" /></div>
+	</div>
+	<div><b>Library Penalty Management Regulations</b><br>
+		Administrator: Students should check out books in accordance with the following rules <br>
+		
+		"(1) Overdue books are subject to a penalty of $0.1 per book per day.<br>
+		⑵Books in the collection must not be scrawled at will. If a book is defaced, a penalty of RMB 0.5 per page will be imposed, and if the defacement is serious or exceeds 10 pages, the book will be treated as a lost book.<br>
+		⑶If a book is lost, you may purchase the same edition and pay a book processing fee of $10, or you may pay 3 to 10 times the amount of compensation in accordance with the relevant library rules and regulations.<br>
+		⑷Anyone stealing books will be fined at least 10 times the price of the book and the whole school will be informed and criticised, and serious cases will be referred to the school security office or public security authorities."</div>
+</div>
+<div id="footer" class="wrap">
+	Team 31 Book Management System &copy; All rights reserved</div>
+</body>
+</html>

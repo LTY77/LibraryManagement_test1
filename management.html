@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Library management</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+
+	<!--A div container that carries a small swimming fish effect-->
+	<div id="jsi-flying-fish-container" class="container"></div>
+
+	<!--Core effects definitionjs-->
+	<script src='fish.js'></script>
+<div id="header" class="wrap">
+	<div class="logo">Book Management</div>
+
+	<div class="login"><a href="login.html">Login</a></div>
+
+	<div id="navbar">
+		<div class="userMenu">
+			<ul>
+				<li ><a href="index.html">UserHome</a></li>
+		
+				<li class="current"><a href="management.html">Bibliographic management</a></li>
+             
+
+			</ul>
+		</div>
+		<form method="get" name="search" action="">
+			Search：<input class="input-text" type="text" name="keywords" /><input class="input-btn" type="submit" name="submit" value="" />
+		</form>
+	</div>
+</div>
+<div id="content" class="wrap">
+	<div class="list bookList">
+		<form method="post" name="shoping" action="shopping.html">
+			<table>
+				<tr class="title">
+				
+					<th class="checker">Borrowing</th>
+                    <th class="checker">Author</th>
+					<th class="checker">Book Title</th>
+                    <th class="checker">Category</th>
+					<th class="checker">Number of books</th>
+					<th class="checker">Book Status</th>
+					<th class="checker">Image Preview</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="bookId" value="1" /></td>
+                    <td>Rabindranath Tagore</td>
+					<td class="title">The Collected Poems of Rabindranath Tagore</td>
+					<td>Literature</td>
+					<td>24</td>
+					<td>Available</td>
+					<td class="thumb"><img src="images/book/book_01.gif" /></td>
+				</tr>
+				<tr class="odd">
+					<td><input type="checkbox" name="bookId" value="2"  /></td>
+					<td>Hen Hen</td>
+					<td class="title">Markings</td>
+					<td>Living</td>
+					<td>9</td>
+                    <td>Available</td>
+					<td class="thumb"><img src="images/book/book_02.gif" /></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="bookId" value="3"disabled /></td>
+                    <td>Wang Zenghong</td>
+					<td class="title">Journey to Paradise</td>
+					<td>Living</td>
+					<td>0</td>
+                    <td>Unavailable</td>
+					<td class="thumb"><img src="images/book/book_03.gif" /></td>
+				</tr>
+				<tr class="odd">
+					<td><input type="checkbox" name="bookId" value="4" /></td>
+                    <td>Qian Zhongshu</td>
+					<td class="title">The Collected Works of Qian Zhongshu (All 10 volumes)</td>
+					<td>Moral</td>
+					<td>9</td>
+                    <td>Available</td>
+					<td class="thumb"><img src="images/book/book_04.gif" /></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="bookId" value="5" /></td>
+                    <td>Zhao Lisheng</td>
+					<td class="title">Zhao Lisheng Gao Zhao - Memoirs of a Couple</td>
+					<td>Couple's life category</td>
+					<td>19</td>
+                    <td>Available</td>
+					<td class="thumb"><img src="images/book/book_05.gif" /></td>
+				</tr>
+				<tr class="odd">
+					<td><input type="checkbox" name="bookId" value="6" disabled /></td>
+                    <td>Zhang Shaogang</td>
+					<td class="title">Boring Lent (Zhang Shaogang's first work of essay and miscellaneous writing)</td>
+					<td>Essay</td>
+					<td>0</td>
+                    <td>Unavailable</td>
+					<td class="thumb"><img src="images/book/book_06.gif" /></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="bookId" value="7" /></td>
+                    <td>Herta Miller</td>
+					<td class="title">A hot potato is a cosy bed</td>
+					<td>Arts & Culture</td>
+					<td>10</td>
+                    <td>Available</td>
+					<td class="thumb"><img src="images/book/book_07.gif" /></td>
+				</tr>
+				<tr class="odd">
+					<td><input type="checkbox" name="bookId" value="8" disabled /></td>
+                    <td>Li Zhen</td>
+					<td class="title">Li's Counter-insurgency</td>
+					<td>War</td>
+					<td>0</td>
+                    <td>Unavailable</td>
+					<td class="thumb"><img src="images/book/book_08.gif" /></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="bookId" value="9" /></td>
+                    <td>Yong Liu</td>
+					<td class="title">A lifetime of unfulfilled destiny</td>
+					<td>Emotional</td>
+					<td>29</td>
+                    <td>Available</td>
+					<td class="thumb"><img src="images/book/book_09.gif" /></td>
+				</tr>
+				<tr class="odd">
+					<td><input type="checkbox" name="bookId" value="10"  /></td>
+                    <td>Yong Liu</td>
+					<td class="title">How much love there is in a lifetime</td>
+					<td>Love Category</td>
+					<td>39</td>
+                    <td>Available</td>
+					<td class="thumb"><img src="images/book/book_10.gif" /></td>
+				</tr>
+			</table>
+			<div class="page-spliter">
+				<a href="#">&lt;</a>
+				<a href="#">Home page</a>
+				<span class="current">1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<span>...</span>
+				<a href="#">Last Page</a>
+				<a href="#">&gt;</a>
+			</div>
+			<div class="button"><input class="input-btn" type="submit" name="submit" value="" /></div>
+		</form>
+	</div>
+</div>
+<div id="footer" class="wrap">
+	Team 31 Book Management System &copy; All rights reserved</div>
+</body>
+</html>

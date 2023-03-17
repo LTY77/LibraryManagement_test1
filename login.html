@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Login</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<!-- <script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script> -->
+
+	<!--A div container that carries a small swimming fish effect-->
+	<div id="jsi-flying-fish-container" class="container"></div>
+
+	<!--Core effects definitionjs-->
+	<!-- <script src='fish.js'></script> -->
+	<div id="header" class="wrap">
+		<div class="logo">Book Management System</div>
+		<div class="login"><a href="login.html">Login</a></div>
+		<div id="navbar">
+			<form method="get" name="search" action="">
+				Search：<input class="input-text" type="text" name="keywords" /><input class="input-btn" type="submit"
+					name="submit" value="" />
+			</form>
+		</div>
+	</div>
+	<div id="login">
+		<h2>User Login</h2>
+		<form method="post" action="">
+			<dl>
+				<dt>UserName：</dt>
+				<dd><input class="input-text" type="text" name="userName"
+						onfocus="showTip('span_repa', 'Please enter a username!')" /><span id="span_repa"></span>
+				</dd>
+				<dt>Password：</dt>
+				<dd><input class="input-text" type="password" name="passWord"
+						onfocus="showTips('span_repassword', 'The first letter of the password must be capitalised!')" /><span id="span_repassword"></span>
+				</dd>
+				<dt></dt>
+				<dd class="button"><input class="input-btn" type="submit" name="submit" value="" /><input
+						class="input-reg" type="button" name="register" value=""
+						onclick="window.location='register.html';" /><button><a
+							href="./x-admin/login.html">Login as administrator</a></button></dd>
+			</dl>
+		</form>
+	</div>
+	<div id="footer" class="wrap">
+		Team 31 &copy; All rights reserved</div>
+	<script>
+		function showTip(spanID, msg) {
+			//First get the span element for the operation
+			var span = document.getElementById(spanID);
+			span.innerHTML = msg;
+		}
+
+		function showTips(spanID, msg) {
+			//First get the span element for the operation
+			var span = document.getElementById(spanID);
+			span.innerHTML = msg;
+		}
+
+	</script>
+</body>
+
+</html>
